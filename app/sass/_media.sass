@@ -1,0 +1,180 @@
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px)
+	.container
+		width: 960px
+	.top-line
+		flex-direction: column
+		padding-left: 100px
+	.menu-wrap, .search-wrap
+		width: 100%
+		margin-bottom: 15px
+	.logo
+		position: absolute
+		top: 0
+		left: 0
+	.search
+		flex-direction: row-reverse
+	.search__input
+		border-right: 1px dashed #dedede
+		border-left: none
+	.pick-recipes
+		flex-direction: column
+	.choice-box
+		width: 100%
+		margin-bottom: 10px
+	.ingredients-box
+		width: 100%
+	.recipe__content
+		flex-direction: column
+	.recipe__item
+		width: 33.33%
+	.recipe__text
+		width: 100%
+		padding-top: 5px
+	.recipe__title
+		height: 70px
+		text-align: center
+	.recipe__icons-box
+		margin-bottom: 20px
+	.recipe__ingredients
+		margin-bottom: 20px
+		text-align: center
+	.recipe__whose
+		bottom: 275px
+
+
+@media only screen and (max-width : 991px)
+	.container
+		width: 720px
+	.food-greed__best-title
+		font-size: 31px
+	.food-greed__content
+		min-height: 200px
+	.food-greed__item:nth-of-type(1),
+	.food-greed__item:nth-of-type(2)
+		.food-greed__content
+			min-height: 300px
+	.food-greed__item:nth-of-type(4),
+	.food-greed__item:nth-of-type(5),
+	.food-greed__item:nth-of-type(6),
+	.food-greed__item:nth-of-type(7),
+		width: 50%
+	.recipe__content
+		flex-direction: row
+	.recipe__item
+		width: 100%
+	.recipe__text
+		padding-top: 15px
+	.recipe__title
+		text-align: left
+		height: 50px
+	.recipe__ingredients
+		text-align: left
+		margin-bottom: 0
+		height: 60px
+	.recipe__image-link
+		width: 50%
+	.recipe__whose
+		bottom: 15px
+	.hots__title
+		right: 10%
+		left: 10%
+
+@media only screen and (max-width : 767px)
+	.container
+		width: 540px
+	.logo
+		left: 50%
+		transform: translateX(-50%)
+	.top-line
+		padding-left: 0
+		padding-top: 50px
+	.jq-selectbox
+		width: 100%
+	.choice-box
+		flex-wrap: wrap
+	.jq-selectbox__select
+		border-bottom: none
+		border-right: 1px solid $gray-color
+	.jq-selectbox:last-child
+		.jq-selectbox__select
+			border-bottom: 1px solid $gray-color
+	.jq-selectbox.focused
+		.jq-selectbox__select
+			border-bottom: none
+			border-right: 1px solid $gray-color
+	.jq-selectbox__dropdown
+		width: calc(100% + 0px)
+	.line-twig__left, .line-twig__right
+		width: 45%
+	.recipe__ingredients
+		height: 90px
+	.recipe__title
+		height: 70px
+	.recipe__image-link
+		width: 100%
+	.hots__item
+		width: 50%
+	.hots__image
+		height: 100%
+
+@media only screen and (max-width : 575px)
+	.container
+		width: 100%
+		padding: 0 20px
+	.basic-menu
+		border-left: 1px dashed #dedede
+	.basic-menu_active
+		height: 100%
+	.basic-menu__list
+		flex-direction: column
+	.burger-link
+		position: absolute
+	.basic-menu__item
+		margin: 5px 0
+		border-bottom: 1px dashed #dedede
+	.food-greed__item
+		width: 100%
+	.food-greed__item:nth-of-type(4),
+	.food-greed__item:nth-of-type(5),
+	.food-greed__item:nth-of-type(6),
+	.food-greed__item:nth-of-type(7),
+		width: 100%
+	.recipes-box__title
+		width: 280px
+		flex-direction: column
+		li
+			margin-bottom: 5px
+			&:last-child
+				margin-bottom: 0
+	.recipe__content
+		flex-direction: column
+	.recipe__whose
+		bottom: inherit
+		top: 20px
+	.recipe__whose-name
+		color: #fff
+	.hots__title
+		font-size: 23px
+	.callback
+		flex-direction: column
+		align-items: center
+	.callback__input
+		margin-bottom: 5px
+	.callback__btn
+		width: 200px
+	footer .container
+		flex-direction: column
+		align-items: center
+	.bottom-menu
+		margin-bottom: 20px
+		justify-content: center
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
